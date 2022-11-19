@@ -34,6 +34,10 @@ app.get("/", (req, res) => {
     res.render("edit");
 })
 
+app.get("/test", (req, res) => {
+    res.json("test page")
+})
+
 app.use("/question", questionRoutes);
 
 app.listen(3001, () => {
